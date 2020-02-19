@@ -4,15 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Front End Web 100</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
 </head>
 
 <body>
-    <header>
-        <h1>Front End Web 100 Starter</h1>
-        <h2>Progressive ITU</h2>
+    <header class="container-fluid jumbotron">
+        <h1>My Shopping List</h1>
     </header>
-    <main>
-        
+    <main class="container">
+        <div class="form-group">
+            <label for="item">Item</label>
+            <input name="item"
+                   id="itemToAdd"
+                   class="form-control">
+            <input type="button"
+                   id="addButton"
+                   class="btn btn-info"
+                   value="Add Item">
+        </div>
+        <ul class="list-group"
+            id="list">
+
+        </ul>
+        <div class="alert alert-info">
+            You have <span id="count">99</span> items on your list.
+        </div>
     </main>
 </body>
 
